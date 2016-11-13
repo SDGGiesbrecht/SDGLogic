@@ -23,3 +23,19 @@ extension Optional where Wrapped : Equatable {
         return lhs != rhs
     }
 }
+
+extension _OptionalNilComparisonType {
+    
+    /// Returns `true` if the left side is non‐`nil`.
+    ///
+    /// - Parameters:
+    ///     - lhs: A value to check.
+    ///     - rhs: `nil`
+    ///
+    /// - SeeAlso: (recommended over) `!=(_:_:)`
+    public static func ≠<T>(lhs: T?, rhs: _OptionalNilComparisonType) -> Bool {
+        // Allows “x ≠ nil” even when x is not Equatable.
+        
+        return lhs != rhs
+    }
+}
