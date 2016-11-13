@@ -61,6 +61,12 @@ class SDGLogicTests: XCTestCase {
         
         XCTAssertFalse(b ≠ nil)
         XCTAssert(a ≠ nil)
+        
+        let c: TypeExample? = TypeExample()
+        let d: TypeExample? = nil
+        
+        XCTAssert(c ≠ nil)
+        XCTAssertFalse(d ≠ nil)
     }
     
     func testTuple() {
