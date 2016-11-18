@@ -1,4 +1,4 @@
-// RawRepresentableExample.swift
+// TypeExample.swift
 //
 // This source file is part of the SDGLogic open source project.
 //
