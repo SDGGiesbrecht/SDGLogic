@@ -6,6 +6,8 @@ SDGLogic extends support for Boolean logic.
 
 * Operators: ≠, ¬, ∧, ∨, etc.
 
+(For a list of other modules in the SDG family, see [here](https://github.com/SDGGiesbrecht/SDG/blob/master/README.md).)
+
 ## Importing
 
 SDGLogic is intended for use with the [Swift Package Manager](https://swift.org/package-manager/).
