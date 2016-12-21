@@ -18,6 +18,6 @@
 ///     - rhs: Another type to compare.
 ///
 /// - SeeAlso: (recommended over) `!=(_:_:)`
-public func ≠(lhs: Any.Type?, rhs: Any.Type?) -> Bool  {
+public func ≠(lhs: Any.Type?, rhs: Any.Type?) -> Bool {
     return lhs != rhs
 }
