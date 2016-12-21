@@ -12,6 +12,7 @@
 extension Optional where Wrapped : Equatable {
     // MARK: - where Wrapped : Equatable
     
+    // swiftlint:disable not_equal
     /// Returns `true` if the two values are not equal or only one of them is `nil`.
     ///
     /// - Parameters:
@@ -22,10 +23,12 @@ extension Optional where Wrapped : Equatable {
     public static func ≠(lhs: Optional, rhs: Optional) -> Bool {
         return lhs != rhs
     }
+    // swiftlint:enable not_equal
 }
 
 extension _OptionalNilComparisonType {
     
+    // swiftlint:disable not_equal
     /// Returns `true` if the left side is non‐`nil`.
     ///
     /// - Parameters:
@@ -38,4 +41,5 @@ extension _OptionalNilComparisonType {
         
         return lhs != rhs
     }
+    // swiftlint:enable not_equal
 }
