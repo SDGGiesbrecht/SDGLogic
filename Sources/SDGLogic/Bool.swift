@@ -9,36 +9,42 @@
 // Licensed under the Apache License, Version 2.0
 // See http://www.apache.org/licenses/LICENSE-2.0 for licence information.
 
+// swiftlint:disable not
 /// Performs logical inversion.
 ///
 /// - SeeAlso: `¬=` (mutating variant)
 ///
 /// - SeeAlso: (recommended over) `!`
 prefix operator ¬
+// swiftlint:enable not
 
 /// Modifies the operand by logical inversion.
 ///
 /// - SeeAlso: `¬` (non‐mutating variant)
 postfix operator ¬=
 
+// swiftlint:disable conjunction
 /// Performs logical conjunction.
 ///
 /// - SeeAlso: `∧=` (mutating variant)
 ///
 /// - SeeAlso: (recommended over) `&&`
 infix operator ∧: LogicalConjunctionPrecedence
+// swiftlint:enable conjunction
 
 /// Modifies the left side by logical conjunction with the right side.
 ///
 /// - SeeAlso: `∧` (non‐mutating variant)
 infix operator ∧=: AssignmentPrecedence
 
+// swiftlint:disable disjunction
 /// Performs logical disjunction.
 ///
 /// - SeeAlso: `∨=` (mutating variant)
 ///
 /// - SeeAlso: (recommended over) `||`
 infix operator ∨: LogicalDisjunctionPrecedence
+// swiftlint:enable disjunction
 
 /// Modifies the left side by logical disjuction with the right side.
 ///
@@ -47,6 +53,7 @@ infix operator ∨=: AssignmentPrecedence
 
 extension Bool {
 
+    // swiftlint:disable not
     /// Returns the logical inverse of the operand.
     ///
     /// - Parameters:
@@ -58,6 +65,7 @@ extension Bool {
     public static prefix func ¬(proposition: Bool) -> Bool {
         return !proposition
     }
+    // swiftlint:enable not
     
     /// Modifies the operand by logical inversion.
     ///
@@ -69,6 +77,7 @@ extension Bool {
         proposition = ¬proposition
     }
     
+    // swiftlint:disable conjunction
     /// Returns the logical conjunction of the two Boolean values.
     ///
     /// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` evaluates to `true`.
@@ -83,6 +92,7 @@ extension Bool {
     public static func ∧(lhs: Bool, rhs: @autoclosure () throws -> Bool) rethrows -> Bool {
         return try lhs && rhs
     }
+    // swiftlint:enable conjunction
     
     /// Modifies the left value by logical conjunction with the right.
     ///
@@ -97,6 +107,7 @@ extension Bool {
         lhs = try lhs ∧ rhs
     }
     
+    // swiftlint:disable disjunction
     /// Returns the logical disjunction of the two Boolean values.
     ///
     /// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` evaluates to `false`.
@@ -111,6 +122,7 @@ extension Bool {
     public static func ∨(lhs: Bool, rhs: @autoclosure () throws -> Bool) rethrows -> Bool {
         return try lhs || rhs
     }
+    // swiftlint:enable disjunction
     
     /// Modifies the left value by logical disjunction with the right.
     ///

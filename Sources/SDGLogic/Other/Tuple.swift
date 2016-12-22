@@ -11,6 +11,7 @@
 
 // MARK: - Tuples
 
+// swiftlint:disable not_equal
 /// Returns `true` if any corresponding components of the two tuples are not equal.
 ///
 /// - Parameters:
@@ -65,3 +66,4 @@ public func ≠<A : Equatable, B : Equatable, C : Equatable, D : Equatable, E : 
 public func ≠<A : Equatable, B : Equatable, C : Equatable, D : Equatable, E : Equatable, F : Equatable>(lhs: (A, B, C, D, E, F), rhs: (A, B, C, D, E, F)) -> Bool {
     return lhs != rhs
 }
+// swiftlint:enable not_equal
