@@ -3,4 +3,6 @@ os:
   - linux
 sudo: required
 osx_image: xcode8.2
+dist: trusty
+install
 script: "sh ./Validate\\\ Changes.command --travis"
