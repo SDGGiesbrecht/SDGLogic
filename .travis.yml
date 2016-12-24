@@ -1,4 +1,6 @@
-os: osx
+os:
+  - osx
+  - linux
 sudo: required
 osx_image: xcode8.2
 script: "sh ./Validate\\\ Changes.command --travis"
