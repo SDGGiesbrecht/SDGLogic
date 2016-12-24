@@ -1,10 +1,12 @@
+[![Build Status](https://travis-ci.org/SDGGiesbrecht/SDGLogic.svg?branch=master)](https://travis-ci.org/SDGGiesbrecht/SDGLogic)
+
 # SDGLogic
 
 SDGLogic extends support for Boolean logic.
 
 ## SDGLogic provides:
 
-* Operators: ≠, ¬, ∧, ∨, etc.
+* Operators: ≠, ¬, ∧, ∨, etc.
 
 (For a list of other modules in the SDG family, see [here](https://github.com/SDGGiesbrecht/SDG/blob/master/README.md).)
 
@@ -36,7 +38,7 @@ import SDGLogic
 import SDGLogic
 
 func tryOperators() {
-    if ¬((true ∧ false) ∨ true) ≠ true {
+    if ¬((true ∧ false) ∨ true) ≠ true {
         print("I’m confused...")
     }
 }
