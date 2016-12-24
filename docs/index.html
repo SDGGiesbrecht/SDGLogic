@@ -76,13 +76,14 @@
         <section>
           <section class="section">
             
-            <a href='#sdglogic' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='sdglogic'>SDGLogic</h1>
+            <p><a href="https://travis-ci.org/SDGGiesbrecht/SDGLogic"><img src="https://travis-ci.org/SDGGiesbrecht/SDGLogic.svg?branch=master" alt="Build Status"></a></p>
+<a href='#sdglogic' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='sdglogic'>SDGLogic</h1>
 
 <p>SDGLogic extends support for Boolean logic.</p>
 <a href='#sdglogic-provides' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='sdglogic-provides'>SDGLogic provides:</h2>
 
 <ul>
-<li>Operators: ≠, ¬, ∧, ∨, etc.</li>
+<li>Operators: ≠, ¬, ∧, ∨, etc.</li>
 </ul>
 
 <p>(For a list of other modules in the SDG family, see <a href="https://github.com/SDGGiesbrecht/SDG/blob/master/README.md">here</a>.)</p>
@@ -107,7 +108,7 @@
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SDGLogic</span>
 
 <span class="kd">func</span> <span class="nf">tryOperators</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="err">¬</span><span class="p">((</span><span class="kc">true</span> <span class="err">∧</span> <span class="kc">false</span><span class="p">)</span> <span class="err">∨</span> <span class="kc">true</span><span class="p">)</span> <span class="o">=</span><span class="err"≯</span> <span class="kc">true</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="err">¬</span><span class="p">((</span><span class="kc">true</span> <span class="err">∧</span> <span class="kc">false</span><span class="p">)</span> <span class="err">∨</span> <span class="kc">true</span><span class="p">)</span> <span class="err">≠</span> <span class="kc">true</span> <span class="p">{</span>
         <span class="nf">print</span><span class="p">(</span><span class="s">"I’m confused..."</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
