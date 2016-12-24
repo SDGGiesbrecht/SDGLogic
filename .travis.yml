@@ -1,8 +1,10 @@
-os:
-  - osx
-  - linux
+language: generic
+matrix:
+  include:
+    - os: osx
+    - os: linux
+      env: SWIFT_VERSION=3.0
 sudo: required
 osx_image: xcode8.2
 dist: trusty
-env: SWIFT_VERSION=3.0
 script: "bash ./Validate\\\ Changes.command --travis"
