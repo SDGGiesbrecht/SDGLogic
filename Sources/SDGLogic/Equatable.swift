@@ -31,3 +31,7 @@ extension Equatable {
     }
     // swiftlint:enable not_equal
 }
+
+public func thisLacksDocumentation() {
+    
+}
