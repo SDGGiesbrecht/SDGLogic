@@ -15,8 +15,6 @@ import XCTest
 class SDGLogicTests: XCTestCase {
     
     func testBool() {
-        XCTAssert(false)
-        
         var variable = false
         
         XCTAssertFalse(true ≠ true)
