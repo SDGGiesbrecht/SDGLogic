@@ -1,4 +1,4 @@
-# SDGLogic
+# SDGLogic 
 
 SDGLogic extends support for Boolean logic.
 
