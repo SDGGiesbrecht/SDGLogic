@@ -26,7 +26,7 @@ cd "${SDG}"
 git pull
 
 cd ../..
-if ! sh .Development\ Tools/SDG/Development\ Tools/Refresh\ Workspace.sh; then
+if ! sh .Development\ Tools/SDG/Development\ Tools/Refresh\ Workspace.sh "$1"; then
     # Note failure for Validate Changes.command.
     exit 1
 fi

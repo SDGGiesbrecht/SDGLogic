@@ -14,7 +14,6 @@ WORKSPACE_STATUS=""
 if sh ./Refresh\ Workspace.command ; then
     WORKSPACE_STATUS="--workspace-up-to-date"
 fi
-if ! sh .Development\ Tools/SDG/Development\ Tools/Validate\ Changes.sh "${WORKSPACE_STATUS}"; then
-    echo "Failed!"
+if ! sh .Development\ Tools/SDG/Development\ Tools/Validate\ Changes.sh "${WORKSPACE_STATUS}" "$1"; then
     exit 1
 fi
