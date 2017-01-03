@@ -2,7 +2,7 @@
 //
 // This source file is part of the SDGLogic open source project.
 //
-// Copyright ©2016 Jeremy David Giesbrecht and the SDGLogic contributors.
+// Copyright ©2016–2017 Jeremy David Giesbrecht and the SDGLogic contributors.
 //
 // Soli Deo gloria
 //
