@@ -172,6 +172,20 @@ if [ "$TRAVIS" == "$TRUE" ]; then
 fi
 
 # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+PrintHeader "Validating file headers..."
+# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+
+FILE_HEADERS_VALID=$FAIL
+if [ "$TRAVIS" == "$TRUE" ]; then
+    DIFFERENCES=$(diff -ar Sources OriginalSources; diff -ar Tests OriginalTests)
+    if [ "$DIFFERENCES" == "" ]; then
+        FILE_HEADERS_VALID=$SUCCEED
+    else
+        echo "$DIFFERENCES"
+    fi
+fi
+
+# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
 PrintHeader "Summary"
 # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
 
@@ -210,6 +224,15 @@ if [ "$TRAVIS" == "$TRUE" ]; then
         IndividualSuccess "Documentation valid."
     else
         IndividualFailure "Travis CI thinks the documentation doesn’t match. Try regenerating documentation with “Validate Changes.command”."
+        STATUS=$FAIL
+    fi
+fi
+
+if [ "$TRAVIS" == "$TRUE" ]; then
+    if [ "$FILE_HEADERS_VALID" == "$SUCCEED" ]; then
+        IndividualSuccess "File headers valid."
+    else
+        IndividualFailure "Travis CI thinks the file headers are invalid. Try refreshing the workspace with “Refresh Workspace.command”."
         STATUS=$FAIL
     fi
 fi

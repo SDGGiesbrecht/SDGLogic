@@ -98,6 +98,20 @@ if [ "$REFRESH_WORKSPACE_CHANGES" != "" ]; then
 fi
 
 # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+PrintHeader "Updating file headers..."
+# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+
+if [ "$TRAVIS" == "$TRUE" ]; then
+    cp -rf Sources OriginalSources
+    cp -rf Tests OriginalTests
+fi
+
+cd ".Development Tools/SDG/Update File Headers"
+swift build
+cd ../../..
+.Development\ Tools/SDG/Update\ File\ Headers/.build/debug/Update\ File\ Headers
+
+# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
 PrintHeader "Updating Git’s list of ignored files..."
 # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
 
