@@ -98,11 +98,34 @@ if [ "$REFRESH_WORKSPACE_CHANGES" != "" ]; then
 fi
 
 # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+PrintHeader "Updating file headers..."
+# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+
+if [ "$TRAVIS" == "$TRUE" ]; then
+    mkdir "Originals"
+    PrintLine "Saving source for header validation..."
+    cp -rf Sources Originals/Sources
+    cp -rf Tests Originals/Tests
+fi
+
+cd ".Development Tools/SDG/Update File Headers"
+swift build
+cd ../../..
+.Development\ Tools/SDG/Update\ File\ Headers/.build/debug/Update\ File\ Headers
+
+# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
 PrintHeader "Updating Git’s list of ignored files..."
 # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
 
 rm -f .gitignore
 cp ".Development Tools/SDG/.gitignore" .gitignore
+
+# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+PrintHeader "Updating Git attributes..."
+# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+
+rm -f .gitattributes
+cp ".Development Tools/SDG/.gitattributes" .gitattributes
 
 # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
 PrintHeader "Updating licence..."
@@ -277,7 +300,7 @@ rm -rf $XCODE_PROJ
 # Temporary: Remove documentation (until it can be otherwise excluded from the Xcode project)
 rm -rf build
 if [ "$TRAVIS" == "$TRUE" ]; then
-    cp -rf docs originaldocs
+    cp -rf docs Originals/docs
 fi
 rm -rf docs
 # End Temporary

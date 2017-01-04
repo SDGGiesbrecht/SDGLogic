@@ -33,6 +33,11 @@ if [[ "$@" == *"--travis"* ]]; then
 else
     TRAVIS=$FALSE
 fi
+if [[ "$@" == *"--skip-refresh"* ]]; then
+    SKIP_REFRESH=$TRUE
+else
+    SKIP_REFRESH=$FALSE
+fi
 # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
 
 PrintLine () {
@@ -74,13 +79,17 @@ IndividualFailure () {
     Failure "✗ $1"
 }
 
-# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
-PrintHeader "Refreshing workspace..."
-# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
-
-WORKSPACE_STATUS=$FAIL
-if bash ./Refresh\ Workspace.command "$1" ; then
+if [ "$SKIP_REFRESH" == "$TRUE" ]; then
     WORKSPACE_STATUS=$SUCCEED
+else
+    # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+    PrintHeader "Refreshing workspace..."
+    # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+
+    WORKSPACE_STATUS=$FAIL
+    if bash ./Refresh\ Workspace.command "$1" ; then
+        WORKSPACE_STATUS=$SUCCEED
+    fi
 fi
 
 VALIDATE_CHANGES_CHANGES=$(diff -ar "Validate Changes.command" ".Development Tools/SDG/Validate Changes.command")
@@ -96,7 +105,11 @@ if [ "$VALIDATE_CHANGES_CHANGES" != "" ]; then
     PrintHeader "Running updated version of “Validate Changes.command”..."
     # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
 
-    bash "Validate Changes.command"
+    if [ "$TRAVIS" == "$TRUE" ]; then
+        bash "Validate Changes.command" "--travis" "--skip-refresh"
+    else
+        bash "Validate Changes.command" "--skip-refresh"
+    fi
     exit $?
 fi
 
@@ -155,17 +168,31 @@ else
     fi
 fi
 
-# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
-PrintHeader "Validating documentation..."
-# ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
-
 DOCUMENTATION_VALID=$FAIL
 if [ "$TRAVIS" == "$TRUE" ]; then
+    # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+    PrintHeader "Validating documentation..."
+    # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+
     rm -rf docs/docsets
     rm -f docs/undocumented.json
-    DIFFERENCES=$(diff -ar docs originaldocs)
+    DIFFERENCES=$(diff -ar docs Originals/docs)
     if [ "$DIFFERENCES" == "" ]; then
         DOCUMENTATION_VALID=$SUCCEED
+    else
+        echo "$DIFFERENCES"
+    fi
+fi
+
+FILE_HEADERS_VALID=$FAIL
+if [ "$TRAVIS" == "$TRUE" ]; then
+    # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+    PrintHeader "Validating file headers..."
+    # ••••••• ••••••• ••••••• ••••••• ••••••• •••••••• ••••••••
+
+    DIFFERENCES=$(diff -ar Sources Originals/Sources; diff -ar Tests Originals/Tests)
+    if [ "$DIFFERENCES" == "" ]; then
+        FILE_HEADERS_VALID=$SUCCEED
     else
         echo "$DIFFERENCES"
     fi
@@ -210,6 +237,15 @@ if [ "$TRAVIS" == "$TRUE" ]; then
         IndividualSuccess "Documentation valid."
     else
         IndividualFailure "Travis CI thinks the documentation doesn’t match. Try regenerating documentation with “Validate Changes.command”."
+        STATUS=$FAIL
+    fi
+fi
+
+if [ "$TRAVIS" == "$TRUE" ]; then
+    if [ "$FILE_HEADERS_VALID" == "$SUCCEED" ]; then
+        IndividualSuccess "File headers valid."
+    else
+        IndividualFailure "Travis CI thinks the file headers are invalid. Try refreshing the workspace with “Refresh Workspace.command”."
         STATUS=$FAIL
     fi
 fi
