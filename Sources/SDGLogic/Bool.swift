@@ -2,7 +2,6 @@
 //
 // This source file is part of the SDGLogic open source project.
 //
-// Travis should fail.
 // Copyright ©2016–2017 Jeremy David Giesbrecht and the SDGLogic contributors.
 //
 // Soli Deo gloria
