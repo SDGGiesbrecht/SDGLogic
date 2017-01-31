@@ -34,7 +34,6 @@ matrix:
     - os: osx
       osx_image: xcode8.2
       language: objective-c
-      before_script: "bash ./Refresh\\\ Workspace\\\ \\(macOS\\).command"
-      xcode_project: SDGLogic.xcodeproj
-      xcode_scheme: SDGLogic
       xcode_sdk: iphonesimulator10.2
+      before_script: "bash ./Refresh\\\ Workspace\\\ \\(macOS\\).command"
+      script: "xcodebuild test -scheme SDGLogic -destination \"platform=iOS Simulator,name=iPhone 7\""
