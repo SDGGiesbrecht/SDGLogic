@@ -36,4 +36,4 @@ matrix:
       language: objective-c
       xcode_sdk: iphonesimulator10.2
       before_script: "bash ./Refresh\\\ Workspace\\\ \\(macOS\\).command"
-      script: "xcodebuild test -scheme SDGLogic -destination \"platform=iOS Simulator,name=iPhone 7\""
+      script: "xcodebuild test -scheme SDGLogic -destination \"platform=tvOS Simulator,name=Apple TV 1080p\""
