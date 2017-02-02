@@ -32,6 +32,9 @@ cd "${0%/*}"
 WORKSPACE=".Workspace"
 if [ ! -d "${WORKSPACE}" ]; then
     git clone https://github.com/SDGGiesbrecht/Workspace "${WORKSPACE}"
+    cd "${WORKSPACE}"
+    git checkout -b os-options origin/os-options
+    cd ..
 fi
 
 # Update Workspace.
