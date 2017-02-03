@@ -21,7 +21,7 @@ matrix:
   include:
     - os: osx
       env:
-        - JOB="macOS & Misc."
+        - JOB="macOS"
       osx_image: xcode8.2
       script:
         - "bash ./Refresh\\ Workspace\\ \\(macOS\\).command"
@@ -29,7 +29,7 @@ matrix:
     - os: linux
       dist: trusty
       env:
-        - JOB="Linux & Misc."
+        - JOB="Linux"
         - SWIFT_VERSION=3.0.2
       script:
         - "eval \"$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)\""
@@ -60,5 +60,14 @@ matrix:
       language: objective-c
       xcode_sdk: appletvsimulator
       script:
+        - "bash ./Refresh\\ Workspace\\ \\(macOS\\).command"
+        - "bash ./Validate\\ Changes\\ \\(macOS\\).command"
+    - os: linux
+      dist: trusty
+      env:
+        - JOB="Misc."
+        - SWIFT_VERSION=3.0.2
+      script:
+        - "eval \"$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)\""
         - "bash ./Refresh\\ Workspace\\ \\(macOS\\).command"
         - "bash ./Validate\\ Changes\\ \\(macOS\\).command"
