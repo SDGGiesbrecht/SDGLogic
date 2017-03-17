@@ -13,5 +13,5 @@
  */
 
 struct TypeExample {
-    
+
 }

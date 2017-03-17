@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SDGLogic  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="SDGLogic  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">SDGLogic Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/SDGGiesbrecht/SDGLogic"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">SDGLogic Reference</a>
+        <img id="carat" src="img/carat.png" />
+        SDGLogic  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Equatable.html">Equatable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/RawRepresentable.html">RawRepresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F8SDGLogicXoi5e_CebFTGSqPMP__GSqPMP___Sb">≠(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F8SDGLogicXoi5e_Cebu0_Rxs9Equatable_S0_rFTTxq__Txq___Sb">≠(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F8SDGLogicXoi5e_Cebu1_Rxs9Equatable_S0_0_S0_rFTTxq_q0__Txq_q0___Sb">≠(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F8SDGLogicXoi5e_Cebu2_Rxs9Equatable_S0_0_S0_1_S0_rFTTxq_q0_q1__Txq_q0_q1___Sb">≠(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F8SDGLogicXoi5e_Cebu3_Rxs9Equatable_S0_0_S0_1_S0_2_S0_rFTTxq_q0_q1_q2__Txq_q0_q1_q2___Sb">≠(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:F8SDGLogicXoi5e_Cebu4_Rxs9Equatable_S0_0_S0_1_S0_2_S0_3_S0_rFTTxq_q0_q1_q2_q3__Txq_q0_q1_q2_q3___Sb">≠(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <!--
+ README.md
+
+ This source file is part of the SDGLogic open source project.
+ https://github.com/SDGGiesbrecht/SDGLogic
+
+ Copyright ©2016–2017 Jeremy David Giesbrecht and the SDGLogic project contributors.
+
+ Soli Deo gloria.
+
+ Licensed under the Apache Licence, Version 2.0.
+ See http://www.apache.org/licenses/LICENSE-2.0 for licence information.
+ -->
+<a href='#sdglogic' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='sdglogic'>SDGLogic</h1>
+
+<p>SDGLogic extends support for Boolean logic.</p>
+<a href='#sdglogic-provides' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='sdglogic-provides'>SDGLogic provides:</h2>
+
+<ul>
+<li>Operators: ≠, ¬, ∧, ∨, etc.</li>
+</ul>
+
+<p>(For a list of other modules in the SDG family, see <a href="https://github.com/SDGGiesbrecht/SDG/blob/master/README.md">here</a>.)</p>
+<a href='#importing' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='importing'>Importing</h2>
+
+<p>SDGLogic is intended for use with the <a href="https://swift.org/package-manager/">Swift Package Manager</a>.</p>
+
+<p>Simply add SDGLogic as a dependency in <code>Package.swift</code>:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span><span class="p">(</span>
+    <span class="o">...</span>
+    <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">...</span>
+        <span class="o">.</span><span class="kt">Package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/SDGGiesbrecht/SDGLogic"</span><span class="p">,</span> <span class="nv">versions</span><span class="p">:</span> <span class="s">"1.1.0"</span> <span class="o">..&lt;</span> <span class="s">"2.0.0"</span><span class="p">)</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>SDGLogic can then be imported in source files:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SDGLogic</span>
+</code></pre>
+<a href='#usage-example' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage-example'>Usage Example</h2>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SDGLogic</span>
+
+<span class="kd">func</span> <span class="nf">tryOperators</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="o">¬</span><span class="p">((</span><span class="kc">true</span> <span class="o">∧</span> <span class="kc">false</span><span class="p">)</span> <span class="o">∨</span> <span class="kc">true</span><span class="p">)</span> <span class="o">≠</span> <span class="kc">true</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"I’m confused..."</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='documentation'>Documentation:</h2>
+
+<p>Complete API documentation is available <a href="https://sdggiesbrecht.github.io/SDGLogic/">here</a>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright ©2017 Jeremy David Giesbrecht and the SDGLogic project contributors. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -12,24 +12,24 @@
  See http://www.apache.org/licenses/LICENSE-2.0 for licence information.
  */
 
-struct RawRepresentableExample: RawRepresentable {
-    
+struct RawRepresentableExample : RawRepresentable {
+
     typealias RawValue = Bool
-    
+
     init(rawValue: RawValue) {
         self.rawValue = rawValue
     }
-    
+
     var rawValue: RawValue
 }
 
-struct EquatableRawRepresentableExample: Equatable, RawRepresentable {
-    
+struct EquatableRawRepresentableExample : Equatable, RawRepresentable {
+
     typealias RawValue = Bool
-    
+
     init(rawValue: RawValue) {
         self.rawValue = rawValue
     }
-    
+
     var rawValue: RawValue
 }

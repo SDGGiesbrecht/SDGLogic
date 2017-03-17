@@ -4,7 +4,7 @@
  This source file is part of the SDGLogic open source project.
  https://github.com/SDGGiesbrecht/SDGLogic
 
- Copyright ©2017 Jeremy David Giesbrecht and the SDGLogic project contributors.
+ Copyright ©2016–2017 Jeremy David Giesbrecht and the SDGLogic project contributors.
 
  Soli Deo gloria.
 
@@ -18,7 +18,7 @@ SDGLogic extends support for Boolean logic.
 
 ## SDGLogic provides:
 
-* Operators: ≠, ¬, ∧, ∨, etc.
+* Operators: ≠, ¬, ∧, ∨, etc.
 
 (For a list of other modules in the SDG family, see [here](https://github.com/SDGGiesbrecht/SDG/blob/master/README.md).)
 
@@ -50,7 +50,7 @@ import SDGLogic
 import SDGLogic
 
 func tryOperators() {
-    if ¬((true ∧ false) ∨ true) ≠ true {
+    if ¬((true ∧ false) ∨ true) ≠ true {
         print("I’m confused...")
     }
 }
