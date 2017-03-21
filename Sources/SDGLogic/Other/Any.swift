@@ -2,7 +2,7 @@
  Any.swift
 
  This source file is part of the SDGLogic open source project.
- https://github.com/SDGGiesbrecht/SDGLogic
+ https://sdggiesbrecht.github.io/SDGLogic/macOS
 
  Copyright ©2016–2017 Jeremy David Giesbrecht and the SDGLogic project contributors.
 
@@ -14,15 +14,13 @@
 
 // MARK: - Types
 
-// swiftlint:disable not_equal
 /// Returns `true` if the two types are not identical or only one of them is `nil`.
 ///
 /// - Parameters:
 ///     - lhs: A type to compare.
 ///     - rhs: Another type to compare.
 ///
-/// - SeeAlso: (recommended over) `!=(_:_:)`
-public func ≠(lhs: Any.Type?, rhs: Any.Type?) -> Bool {
+/// - RecommendedOver: !=
+public func ≠ (lhs: Any.Type?, rhs: Any.Type?) -> Bool {
     return lhs != rhs
 }
-// swiftlint:enable not_equal

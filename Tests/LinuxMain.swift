@@ -2,7 +2,7 @@
  LinuxMain.swift
 
  This source file is part of the SDGLogic open source project.
- https://github.com/SDGGiesbrecht/SDGLogic
+ https://sdggiesbrecht.github.io/SDGLogic/macOS
 
  Copyright ©2016–2017 Jeremy David Giesbrecht and the SDGLogic project contributors.
 
@@ -16,5 +16,5 @@ import XCTest
 @testable import SDGLogicTests
 
 XCTMain([
-     testCase(SDGLogicTests.allTests),
+     testCase(SDGLogicTests.allTests)
 ])

@@ -2,7 +2,7 @@
  Optional.swift
 
  This source file is part of the SDGLogic open source project.
- https://github.com/SDGGiesbrecht/SDGLogic
+ https://sdggiesbrecht.github.io/SDGLogic/macOS
 
  Copyright ©2016–2017 Jeremy David Giesbrecht and the SDGLogic project contributors.
 
@@ -14,35 +14,30 @@
 
 extension Optional where Wrapped : Equatable {
     // MARK: - where Wrapped : Equatable
-    
-    // swiftlint:disable not_equal
+
     /// Returns `true` if the two values are not equal or only one of them is `nil`.
     ///
     /// - Parameters:
     ///     - lhs: A value to compare.
     ///     - rhs: Another value to compare.
     ///
-    /// - SeeAlso: (recommended over) `!=(_:_:)`
-    public static func ≠(lhs: Optional, rhs: Optional) -> Bool {
+    /// - RecommendedOver: !=
+    public static func ≠ (lhs: Optional, rhs: Optional) -> Bool {
         return lhs != rhs
     }
-    // swiftlint:enable not_equal
 }
 
 extension _OptionalNilComparisonType {
-    
-    // swiftlint:disable not_equal
+
     /// Returns `true` if the left side is non‐`nil`.
     ///
     /// - Parameters:
     ///     - lhs: A value to check.
     ///     - rhs: `nil`
     ///
-    /// - SeeAlso: (recommended over) `!=(_:_:)`
-    public static func ≠<T>(lhs: T?, rhs: _OptionalNilComparisonType) -> Bool {
-        // Allows “x ≠ nil” even when x is not Equatable.
-        
+    /// - RecommendedOver: !=
+    public static func ≠ <T>(lhs: T?, rhs: _OptionalNilComparisonType) -> Bool {
         return lhs != rhs
+        // Allows “x ≠ nil” even when x is not Equatable.
     }
-    // swiftlint:enable not_equal
 }
