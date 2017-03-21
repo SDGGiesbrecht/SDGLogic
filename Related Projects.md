@@ -26,7 +26,9 @@
 
 ## <a name="Foundation‐Level‐Libraries">Foundation Level Libraries</a>
 
-### [SDGLogic](https://github.com/SDGGiesbrecht/SDGLogic)
+### [SDGLogic](https://sdggiesbrecht.github.io/SDGLogic/macOS)
+
+SDGLogic extends support for Boolean logic.
 
 ### [SDGMathematics](https://github.com/SDGGiesbrecht/SDGMathematics)
 
