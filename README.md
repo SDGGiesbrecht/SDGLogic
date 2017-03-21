@@ -2,7 +2,7 @@
  README.md
 
  This source file is part of the SDGLogic open source project.
- https://github.com/SDGGiesbrecht/SDGLogic
+ https://sdggiesbrecht.github.io/SDGLogic/macOS
 
  Copyright ©2016–2017 Jeremy David Giesbrecht and the SDGLogic project contributors.
 
@@ -12,15 +12,28 @@
  See http://www.apache.org/licenses/LICENSE-2.0 for licence information.
  -->
 
+<!--
+ !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!!
+ This file is managed by Workspace.
+ Manual changes will not persist.
+ For more information, see:
+ https://github.com/SDGGiesbrecht/Workspace/blob/master/Documentation/Read‐Me.md
+ !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!!
+ -->
+
+APIs: [macOS](https://sdggiesbrecht.github.io/SDGLogic/macOS) • [Linux](https://sdggiesbrecht.github.io/SDGLogic/Linux) • [iOS](https://sdggiesbrecht.github.io/SDGLogic/iOS) • [watchOS](https://sdggiesbrecht.github.io/SDGLogic/watchOS) • [tvOS](https://sdggiesbrecht.github.io/SDGLogic/tvOS)
+
 # SDGLogic
 
 SDGLogic extends support for Boolean logic.
 
-## SDGLogic provides:
+> [Ὁ δέ, οὐ μαίνομαι, φησί, κράτιστε Φῆστε, ἀλλὰ ἀληθείας καὶ σωφροσύνης ῥήματα ἀποφθέγγομαι.<br>I am not insane, most excellent Festus; Ι proclaim words of truth and reason.](https://www.biblegateway.com/passage/?search=Acts+26&version=SBLGNT;NIVUK)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;―‎שאול/Shaʼul of Tarsus
 
-* Operators: ≠, ¬, ∧, ∨, etc.
+## Features
 
-(For a list of other modules in the SDG family, see [here](https://github.com/SDGGiesbrecht/SDG/blob/master/README.md).)
+- Operators: `≠`, `¬`, `∧`, `∨`, etc.
+
+(For a list of related projecs, see [here](Related%20Projects.md).)
 
 ## Importing
 
@@ -33,7 +46,8 @@ let package = Package(
     ...
     dependencies: [
         ...
-        .Package(url: "https://github.com/SDGGiesbrecht/SDGLogic", versions: "1.1.0" ..< "2.0.0")
+        .Package(url: "https://github.com/SDGGiesbrecht/SDGLogic", versions: "1.1.0" ..< "2.0.0"),
+        ...
     ]
 )
 ```
@@ -44,7 +58,7 @@ SDGLogic can then be imported in source files:
 import SDGLogic
 ```
 
-## Usage Example
+## Example Usage
 
 ```swift
 import SDGLogic
@@ -56,6 +70,12 @@ func tryOperators() {
 }
 ```
 
-## Documentation:
+## About
 
-Complete API documentation is available [here](https://sdggiesbrecht.github.io/SDGLogic/).
+The SDGLogic project is maintained by Jeremy David Giesbrecht.
+
+If SDGLogic saves you money, consider giving some of it as a [donation](https://paypal.me/JeremyGiesbrecht).
+
+If SDGLogic saves you time, consider devoting some of it to [contributing](https://github.com/SDGGiesbrecht/SDGLogic) back to the project.
+
+> [Ἄξιος γὰρ ὁ ἐργάτης τοῦ μισθοῦ αὐτοῦ ἐστι.<br>For the worker is worthy of his wages.](https://www.biblegateway.com/passage/?search=Luke+10&version=SBLGNT;NIVUK)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;―‎ישוע/Yeshuʼa

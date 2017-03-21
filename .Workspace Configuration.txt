@@ -2,7 +2,7 @@
     .Workspace Configuration.txt
 
     This source file is part of the SDGLogic open source project.
-    https://github.com/SDGGiesbrecht/SDGLogic
+    https://sdggiesbrecht.github.io/SDGLogic/macOS
 
     Copyright ©2017 Jeremy David Giesbrecht and the SDGLogic project contributors.
 
@@ -14,6 +14,24 @@
 
 [_Import https://github.com/SDGGiesbrecht/SDG_]
 
-Project Website: https://github.com/SDGGiesbrecht/SDGLogic
+Current Version: 1.1
+
+Project Website: https://sdggiesbrecht.github.io/SDGLogic/macOS
+Documentation URL: https://sdggiesbrecht.github.io/SDGLogic/macOS
+Repository URL: https://github.com/SDGGiesbrecht/SDGLogic
+
+Short Project Description: SDGLogic extends support for Boolean logic.
+
+[_Begin Quotation_]
+Ὁ δέ, οὐ μαίνομαι, φησί, κράτιστε Φῆστε, ἀλλὰ ἀληθείας καὶ σωφροσύνης ῥήματα ἀποφθέγγομαι.
+I am not insane, most excellent Festus; Ι proclaim words of truth and reason.
+[_End_]
+Quotation Chapter: Acts 26
+Quotation Testament: New
+Citation: ‎שאול/Shaʼul of Tarsus
+
+[_Begin Feature List_]
+- Operators: `≠`, `¬`, `∧`, `∨`, etc.
+[_End_]
 
 Skip Simulator: True
