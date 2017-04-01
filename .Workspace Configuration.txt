@@ -24,11 +24,13 @@ Short Project Description: SDGLogic extends support for Boolean logic.
 
 [_Begin Quotation_]
 Ὁ δέ, οὐ μαίνομαι, φησί, κράτιστε Φῆστε, ἀλλὰ ἀληθείας καὶ σωφροσύνης ῥήματα ἀποφθέγγομαι.
+[_End_]
+[_Begin Quotation Translation_]
 I am not insane, most excellent Festus; Ι proclaim words of truth and reason.
 [_End_]
 Quotation Chapter: Acts 26
 Quotation Testament: New
-Citation: ‎שאול/Shaʼul of Tarsus
+Citation: ‎שאול/Shaʼul
 
 [_Begin Feature List_]
 - Operators: `≠`, `¬`, `∧`, `∨`, etc.
