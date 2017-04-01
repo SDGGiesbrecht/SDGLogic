@@ -14,55 +14,60 @@
 
 // MARK: - Tuples
 
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// Returns `true` if the two values are inequal.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: A value to compare.
+///     - rhs: Another value to compare.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable>(lhs: (A, B), rhs: (A, B)) -> Bool {
     return lhs != rhs
 }
 
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// Returns `true` if the two values are inequal.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: A value to compare.
+///     - rhs: Another value to compare.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable, C : Equatable>(lhs: (A, B, C), rhs: (A, B, C)) -> Bool {
     return lhs != rhs
 }
 
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// Returns `true` if the two values are inequal.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: A value to compare.
+///     - rhs: Another value to compare.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable, C : Equatable, D : Equatable>(lhs: (A, B, C, D), rhs: (A, B, C, D)) -> Bool {
     return lhs != rhs
 }
 
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// Returns `true` if the two values are inequal.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: A value to compare.
+///     - rhs: Another value to compare.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable, C : Equatable, D : Equatable, E : Equatable>(lhs: (A, B, C, D, E), rhs: (A, B, C, D, E)) -> Bool {
     return lhs != rhs
 }
 
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// Returns `true` if the two values are inequal.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: A value to compare.
+///     - rhs: Another value to compare.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable, C : Equatable, D : Equatable, E : Equatable, F : Equatable>(lhs: (A, B, C, D, E, F), rhs: (A, B, C, D, E, F)) -> Bool {

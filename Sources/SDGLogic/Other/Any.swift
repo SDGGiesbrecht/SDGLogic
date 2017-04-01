@@ -14,11 +14,12 @@
 
 // MARK: - Types
 
-/// Returns `true` if the two types are not identical or only one of them is `nil`.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// Returns `true` if the two values are inequal.
 ///
 /// - Parameters:
-///     - lhs: A type to compare.
-///     - rhs: Another type to compare.
+///     - lhs: A value to compare.
+///     - rhs: Another value to compare.
 ///
 /// - RecommendedOver: !=
 public func ≠ (lhs: Any.Type?, rhs: Any.Type?) -> Bool {

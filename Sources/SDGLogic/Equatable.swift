@@ -19,6 +19,7 @@ infix operator ≠: ComparisonPrecedence
 
 extension Equatable {
 
+    // [_Define Documentation: SDGLogic.Equatable.≠_]
     /// Returns `true` if the two values are inequal.
     ///
     /// - Parameters:

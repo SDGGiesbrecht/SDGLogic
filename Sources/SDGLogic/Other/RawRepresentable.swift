@@ -15,7 +15,8 @@
 extension RawRepresentable where RawValue : Equatable {
     // MARK: - where RawValue : Equatable
 
-    /// Returns `true` if the raw values are inequal.
+    // [_Inherit Documentation: SDGLogic.Equatable.≠_]
+    /// Returns `true` if the two values are inequal.
     ///
     /// - Parameters:
     ///     - lhs: A value to compare.
@@ -30,7 +31,8 @@ extension RawRepresentable where RawValue : Equatable {
 extension RawRepresentable where Self : Equatable, Self.RawValue : Equatable {
     // MARK: - where Self : Equatable, Self.RawValue : Equatable
 
-    /// Returns `true` if the raw values are inequal.
+    // [_Inherit Documentation: SDGLogic.Equatable.≠_]
+    /// Returns `true` if the two values are inequal.
     ///
     /// - Parameters:
     ///     - lhs: A value to compare.

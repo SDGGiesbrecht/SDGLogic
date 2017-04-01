@@ -12,44 +12,81 @@
  See http://www.apache.org/licenses/LICENSE-2.0 for licence information.
  */
 
-/// Performs logical inversion.
+// [_Inherit Documentation: SDGLogic.Bool.¬_]
+/// Returns the logical inverse of the operand.
+///
+/// - Parameters:
+///     - operand: The value to invert.
 ///
 /// - MutatingVariant: ¬=
 ///
 /// - RecommendedOver: !
 prefix operator ¬
 
+// [_Inherit Documentation: SDGLogic.Bool.¬=_]
 /// Modifies the operand by logical inversion.
+///
+/// - Parameters:
+///     - operand: The value to modify by inversion.
 ///
 /// - NonmutatingVariant: ¬
 postfix operator ¬=
 
-/// Performs logical conjunction.
+// [_Inherit Documentation: SDGLogic.Bool.∧_]
+/// Returns the logical conjunction of the two Boolean values.
+///
+/// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` evaluates to `true`.
+///
+/// - Parameters:
+///     - lhs: A Boolean value.
+///     - rhs: A closure that results in another Boolean value.
 ///
 /// - MutatingVariant: ∧=
 ///
 /// - RecommendedOver: &&
 infix operator ∧: LogicalConjunctionPrecedence
 
-/// Modifies the left side by logical conjunction with the right side.
+// [_Inherit Documentation: SDGLogic.Bool.∧=_]
+/// Modifies the left value by logical conjunction with the right.
+///
+/// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` is `true`.
+///
+/// - Parameters:
+///     - lhs: The Boolean value to modify.
+///     - rhs: A closure that results in another Boolean value.
 ///
 /// - NonmutatingVariant: ∧
 infix operator ∧=: AssignmentPrecedence
 
-/// Performs logical disjunction.
+// [_Inherit Documentation: SDGLogic.Bool.∨_]
+/// Returns the logical disjunction of the two Boolean values.
+///
+/// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` evaluates to `false`.
+///
+/// - Parameters:
+///     - lhs: A Boolean value.
+///     - rhs: A closure that results in another Boolean value.
 ///
 /// - MutatingVariant: ∨=
 ///
 /// - RecommendedOver: ||
 infix operator ∨: LogicalDisjunctionPrecedence
 
-/// Modifies the left side by logical disjuction with the right side.
+// [_Inherit Documentation: SDGLogic.Bool.∨=_]
+/// Modifies the left value by logical disjunction with the right.
+///
+/// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` is `false`.
+///
+/// - Parameters:
+///     - lhs: The Boolean value to modify.
+///     - rhs: A closure that results in another Boolean value.
 ///
 /// - NonmutatingVariant: ∨
 infix operator ∨=: AssignmentPrecedence
 
 extension Bool {
 
+    // [_Define Documentation: SDGLogic.Bool.¬_]
     /// Returns the logical inverse of the operand.
     ///
     /// - Parameters:
@@ -62,6 +99,7 @@ extension Bool {
         return !proposition
     }
 
+    // [_Define Documentation: SDGLogic.Bool.¬=_]
     /// Modifies the operand by logical inversion.
     ///
     /// - Parameters:
@@ -72,6 +110,7 @@ extension Bool {
         proposition = ¬proposition
     }
 
+    // [_Define Documentation: SDGLogic.Bool.∧_]
     /// Returns the logical conjunction of the two Boolean values.
     ///
     /// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` evaluates to `true`.
@@ -87,6 +126,7 @@ extension Bool {
         return try lhs && rhs
     }
 
+    // [_Define Documentation: SDGLogic.Bool.∧=_]
     /// Modifies the left value by logical conjunction with the right.
     ///
     /// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` is `true`.
@@ -100,6 +140,7 @@ extension Bool {
         lhs = try lhs ∧ rhs
     }
 
+    // [_Define Documentation: SDGLogic.Bool.∨_]
     /// Returns the logical disjunction of the two Boolean values.
     ///
     /// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` evaluates to `false`.
@@ -115,6 +156,7 @@ extension Bool {
         return try lhs || rhs
     }
 
+    // [_Define Documentation: SDGLogic.Bool.∨=_]
     /// Modifies the left value by logical disjunction with the right.
     ///
     /// This operator uses short‐circuit evaluation: `rhs` is only evaluated if `lhs` is `false`.

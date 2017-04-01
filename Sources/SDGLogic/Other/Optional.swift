@@ -15,7 +15,8 @@
 extension Optional where Wrapped : Equatable {
     // MARK: - where Wrapped : Equatable
 
-    /// Returns `true` if the two values are not equal or only one of them is `nil`.
+    // [_Inherit Documentation: SDGLogic.Equatable.≠_]
+    /// Returns `true` if the two values are inequal.
     ///
     /// - Parameters:
     ///     - lhs: A value to compare.
@@ -29,11 +30,12 @@ extension Optional where Wrapped : Equatable {
 
 extension _OptionalNilComparisonType {
 
-    /// Returns `true` if the left side is non‐`nil`.
+    // [_Inherit Documentation: SDGLogic.Equatable.≠_]
+    /// Returns `true` if the two values are inequal.
     ///
     /// - Parameters:
-    ///     - lhs: A value to check.
-    ///     - rhs: `nil`
+    ///     - lhs: A value to compare.
+    ///     - rhs: Another value to compare.
     ///
     /// - RecommendedOver: !=
     public static func ≠ <T>(lhs: T?, rhs: _OptionalNilComparisonType) -> Bool {
