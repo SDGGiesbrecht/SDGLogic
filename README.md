@@ -21,6 +21,8 @@
  !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!! !!!!!!!
  -->
 
+[🇨🇦EN](Documentation/🇨🇦EN%20Read%20Me.md) • [🇬🇧EN](Documentation/🇬🇧EN%20Read%20Me.md) • [🇺🇸EN](Documentation/🇺🇸EN%20Read%20Me.md) • [🇩🇪DE](Documentation/🇩🇪DE%20Lies%20mich.md) <!--Skip in Jazzy-->
+
 APIs: [macOS](https://sdggiesbrecht.github.io/SDGLogic/macOS) • [Linux](https://sdggiesbrecht.github.io/SDGLogic/Linux) • [iOS](https://sdggiesbrecht.github.io/SDGLogic/iOS) • [watchOS](https://sdggiesbrecht.github.io/SDGLogic/watchOS) • [tvOS](https://sdggiesbrecht.github.io/SDGLogic/tvOS)
 
 # SDGLogic
@@ -33,7 +35,7 @@ SDGLogic extends support for Boolean logic.
 
 - Operators: `≠`, `¬`, `∧`, `∨`, etc.
 
-(For a list of related projecs, see [here](Documentation/Related%20Projects.md).) <!--Skip in Jazzy-->
+(For a list of related projecs, see [here](Documentation/🇨🇦EN%20Related%20Projects.md).) <!--Skip in Jazzy-->
 
 ## Importing
 
@@ -63,7 +65,7 @@ import SDGLogic
 ```swift
 import SDGLogic
 
-func tryOperators() {
+private func tryOperators() {
     if ¬((true ∧ false) ∨ true) ≠ true {
         print("I’m confused...")
     }

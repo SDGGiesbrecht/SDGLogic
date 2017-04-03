@@ -1,5 +1,5 @@
 <!--
- Related Projects.md
+ 🇬🇧EN Related Projects.md
 
  This source file is part of the SDGLogic open source project.
  https://sdggiesbrecht.github.io/SDGLogic/macOS

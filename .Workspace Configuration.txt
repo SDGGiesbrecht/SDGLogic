@@ -20,20 +20,52 @@ Project Website: https://sdggiesbrecht.github.io/SDGLogic/macOS
 Documentation URL: https://sdggiesbrecht.github.io/SDGLogic/macOS
 Repository URL: https://github.com/SDGGiesbrecht/SDGLogic
 
-Short Project Description: SDGLogic extends support for Boolean logic.
+[_Begin Localizations_]
+en-CA
+en-GB
+en-US
+de-DE
+[_End_]
+
+[_Begin Short Project Description_]
+[_en-CA_]
+SDGLogic extends support for Boolean logic.
+[_en-GB_]
+SDGLogic extends support for Boolean logic.
+[_en-US_]
+SDGLogic extends support for Boolean logic.
+[_de-DE_]
+SDGLogic („SDGLogik“) erweitert die Unterstützung für boolesche Logik.
+[_End_]
 
 [_Begin Quotation_]
 Ὁ δέ, οὐ μαίνομαι, φησί, κράτιστε Φῆστε, ἀλλὰ ἀληθείας καὶ σωφροσύνης ῥήματα ἀποφθέγγομαι.
 [_End_]
 [_Begin Quotation Translation_]
+[_en-CA_]
 I am not insane, most excellent Festus; Ι proclaim words of truth and reason.
+[_en-GB_]
+I am not insane, most excellent Festus; Ι proclaim words of truth and reason.
+[_en-US_]
+I am not insane, most excellent Festus; Ι proclaim words of truth and reason.
+[_de-DE_]
+Ich bin nicht verrückt, hochedler Festus. Ich rede wahre und vernünftige Worte.
 [_End_]
 Quotation Chapter: Acts 26
 Quotation Testament: New
 Citation: ‎שאול/Shaʼul
 
 [_Begin Feature List_]
+[_en-CA_]
 - Operators: `≠`, `¬`, `∧`, `∨`, etc.
+[_en-GB_]
+- Operators: `≠`, `¬`, `∧`, `∨`, etc.
+[_en-US_]
+- Operators: `≠`, `¬`, `∧`, `∨`, etc.
+[_en-DE_]
+(Die deutsche APS wurde noch von kein Muttersprachler überprüft und könnte Rechtschreibungsfehler beinhalten. [Verbesserungsvorschläge](https://github.com/SDGGiesbrecht/SDGCaching/issues) sind willkommen.)
+
+- Operatoren: `≠`, `¬`, `∧`, `∨`, usw.
 [_End_]
 
 Skip Simulator: True

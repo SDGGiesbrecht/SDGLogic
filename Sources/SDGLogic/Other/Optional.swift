@@ -12,15 +12,21 @@
  See http://www.apache.org/licenses/LICENSE-2.0 for licence information.
  */
 
+extension Optional {
+
+    /// Der eingeschlossene Typ.
+    public typealias Eingeschlossen = Wrapped
+}
+
 extension Optional where Wrapped : Equatable {
-    // MARK: - where Wrapped : Equatable
+    // MARK: - 🇨🇦🇬🇧🇺🇸 where Wrapped : Equatable • 🇩🇪 wo Eingeschlossen : Vergleichbar
 
     // [_Inherit Documentation: SDGLogic.Equatable.≠_]
-    /// Returns `true` if the two values are inequal.
+    /// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind.
     ///
     /// - Parameters:
-    ///     - lhs: A value to compare.
-    ///     - rhs: Another value to compare.
+    ///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.
+    ///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.
     ///
     /// - RecommendedOver: !=
     public static func ≠ (lhs: Optional, rhs: Optional) -> Bool {
@@ -31,11 +37,11 @@ extension Optional where Wrapped : Equatable {
 extension _OptionalNilComparisonType {
 
     // [_Inherit Documentation: SDGLogic.Equatable.≠_]
-    /// Returns `true` if the two values are inequal.
+    /// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind.
     ///
     /// - Parameters:
-    ///     - lhs: A value to compare.
-    ///     - rhs: Another value to compare.
+    ///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.
+    ///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.
     ///
     /// - RecommendedOver: !=
     public static func ≠ <T>(lhs: T?, rhs: _OptionalNilComparisonType) -> Bool {

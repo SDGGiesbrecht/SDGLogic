@@ -1,5 +1,5 @@
 /*
- ReadMe.swift
+ ReadMeUS.swift
 
  This source file is part of the SDGLogic open source project.
  https://sdggiesbrecht.github.io/SDGLogic/macOS
@@ -12,10 +12,10 @@
  See http://www.apache.org/licenses/LICENSE-2.0 for licence information.
  */
 
-// [_Define Example: Read‐Me_]
+// [_Define Example: Read‐Me: en-US_]
 import SDGLogic
 
-func tryOperators() {
+private func tryOperators() {
     if ¬((true ∧ false) ∨ true) ≠ true {
         print("I’m confused...")
     }
