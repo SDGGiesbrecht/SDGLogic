@@ -43,6 +43,12 @@
                 <a href="de-verwandte-projekte.html">🇩🇪DE Verwandte Projekte</a>
               </li>
               <li class="nav-group-task">
+                <a href="fr-lisez-moi.html">🇫🇷FR Lisez moi</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="fr-projets-lis.html">🇫🇷FR Projets liés</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="en-read-me.html">🇬🇧EN Read Me</a>
               </li>
               <li class="nav-group-task">
@@ -61,6 +67,12 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Global Variables.html#/s:v8SDGLogic6falschSb">falsch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:v8SDGLogic4fauxSb">faux</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:v8SDGLogic4vraiSb">vrai</a>
               </li>
               <li class="nav-group-task">
                 <a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a>
@@ -106,6 +118,9 @@
                 <a href="Functions.html#/s:F8SDGLogicXoi5e_Cebu4_Rxs9Equatable_S0_0_S0_1_S0_2_S0_3_S0_rFTTxq_q0_q1_q2_q3__Txq_q0_q1_q2_q3___Sb">≠(_:_:)</a>
               </li>
               <li class="nav-group-task">
+                <a href="Functions.html#/s:F8SDGLogic2siFzTSbFzT_T__T_">si(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Functions.html#/s:F8SDGLogic4wennFzTSbFzT_T__T_">wenn(_:_:)</a>
               </li>
             </ul>
@@ -114,16 +129,13 @@
             <a href="Typealiases.html">Typealiases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Typealiases.html#/s:E8SDGLogicSq14Eingeschlossen">Eingeschlossen</a>
+                <a href="Typealiases.html#/s:8SDGLogicX26ComparablePourEgalite_mslg">ComparablePourÉgalité</a>
               </li>
               <li class="nav-group-task">
-                <a href="Typealiases.html#/s:8SDGLogic11Irgendeiner">Irgendeiner</a>
+                <a href="Typealiases.html#/s:E8SDGLogicSq16Eingeschlossener">Eingeschlossener</a>
               </li>
               <li class="nav-group-task">
-                <a href="Typealiases.html#/s:8SDGLogic14Rohdarstellbar">Rohdarstellbar</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Typealiases.html#/s:E8SDGLogicPs16RawRepresentable7Rohwert">Rohwert</a>
+                <a href="Typealiases.html#/s:E8SDGLogicSqX11Emballe_zge">Emballé</a>
               </li>
               <li class="nav-group-task">
                 <a href="Typealiases.html#/s:8SDGLogic12Vergleichbar">Vergleichbar</a>
@@ -202,6 +214,66 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:F8SDGLogic2siFzTSbFzT_T__T_"></a>
+                    <a name="//apple_ref/swift/Function/si(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:F8SDGLogic2siFzTSbFzT_T__T_">si(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>N’exécute <code>suite</code> que si <code>condition</code> est <code><a href="Global Variables.html#/s:v8SDGLogic4vraiSb">vrai</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">si</span><span class="p">(</span><span class="n">_</span> <span class="nv">condition</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">suite</span><span class="p">:</span> <span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="k">rethrows</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>condition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>La condition.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>suite</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Une fermeture à exécuter en cas de <code>vrai</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -219,7 +291,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind.</p>
+                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne <code><a href="Global Variables.html#/s:v8SDGLogic4vraiSb">vrai</a></code> si les deux valeurs ne sont pas égales.</p>
 
 <div class="aside aside-recommended-over">
     <p class="aside-title">Recommended over</p>
@@ -248,7 +320,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.</p>
 
                                 </div>
                               </td>
@@ -261,7 +333,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.</p>
 
                                 </div>
                               </td>
@@ -289,7 +361,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind.</p>
+                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne <code><a href="Global Variables.html#/s:v8SDGLogic4vraiSb">vrai</a></code> si les deux valeurs ne sont pas égales.</p>
 
 <div class="aside aside-recommended-over">
     <p class="aside-title">Recommended over</p>
@@ -318,7 +390,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.</p>
 
                                 </div>
                               </td>
@@ -331,7 +403,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.</p>
 
                                 </div>
                               </td>
@@ -355,7 +427,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind.</p>
+                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne <code><a href="Global Variables.html#/s:v8SDGLogic4vraiSb">vrai</a></code> si les deux valeurs ne sont pas égales.</p>
 
 <div class="aside aside-recommended-over">
     <p class="aside-title">Recommended over</p>
@@ -384,7 +456,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.</p>
 
                                 </div>
                               </td>
@@ -397,7 +469,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.</p>
 
                                 </div>
                               </td>
@@ -421,7 +493,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind.</p>
+                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne <code><a href="Global Variables.html#/s:v8SDGLogic4vraiSb">vrai</a></code> si les deux valeurs ne sont pas égales.</p>
 
 <div class="aside aside-recommended-over">
     <p class="aside-title">Recommended over</p>
@@ -450,7 +522,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.</p>
 
                                 </div>
                               </td>
@@ -463,7 +535,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.</p>
 
                                 </div>
                               </td>
@@ -487,7 +559,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind.</p>
+                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne <code><a href="Global Variables.html#/s:v8SDGLogic4vraiSb">vrai</a></code> si les deux valeurs ne sont pas égales.</p>
 
 <div class="aside aside-recommended-over">
     <p class="aside-title">Recommended over</p>
@@ -516,7 +588,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.</p>
 
                                 </div>
                               </td>
@@ -529,7 +601,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.</p>
 
                                 </div>
                               </td>
@@ -553,7 +625,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind.</p>
+                        <p>🇨🇦🇬🇧🇺🇸 Returns <code>true</code> if the two values are inequal. • 🇩🇪 Gibt <code><a href="Global Variables.html#/s:v8SDGLogic4wahrSb">wahr</a></code> zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne <code><a href="Global Variables.html#/s:v8SDGLogic4vraiSb">vrai</a></code> si les deux valeurs ne sont pas égales.</p>
 
 <div class="aside aside-recommended-over">
     <p class="aside-title">Recommended over</p>
@@ -582,7 +654,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.</p>
 
                                 </div>
                               </td>
@@ -595,7 +667,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.</p>
+                                  <p>🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.</p>
 
                                 </div>
                               </td>

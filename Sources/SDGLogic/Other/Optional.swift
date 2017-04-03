@@ -15,18 +15,20 @@
 extension Optional {
 
     /// Der eingeschlossene Typ.
-    public typealias Eingeschlossen = Wrapped
+    public typealias Eingeschlossener = Wrapped
+    /// Le type emballé.
+    public typealias Emballé = Wrapped
 }
 
 extension Optional where Wrapped : Equatable {
-    // MARK: - 🇨🇦🇬🇧🇺🇸 where Wrapped : Equatable • 🇩🇪 wo Eingeschlossen : Vergleichbar
+    // MARK: - 🇨🇦🇬🇧🇺🇸 where Wrapped : Equatable • 🇩🇪 wo Eingeschlossener : Vergleichbar • 🇫🇷 ou Emballé : ComparablePourÉgalité
 
     // [_Inherit Documentation: SDGLogic.Equatable.≠_]
-    /// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind.
+    /// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne `vrai` si les deux valeurs ne sont pas égales.
     ///
     /// - Parameters:
-    ///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.
-    ///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.
+    ///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.
+    ///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.
     ///
     /// - RecommendedOver: !=
     public static func ≠ (lhs: Optional, rhs: Optional) -> Bool {
@@ -37,11 +39,11 @@ extension Optional where Wrapped : Equatable {
 extension _OptionalNilComparisonType {
 
     // [_Inherit Documentation: SDGLogic.Equatable.≠_]
-    /// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind.
+    /// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne `vrai` si les deux valeurs ne sont pas égales.
     ///
     /// - Parameters:
-    ///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll.
-    ///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll.
+    ///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.
+    ///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.
     ///
     /// - RecommendedOver: !=
     public static func ≠ <T>(lhs: T?, rhs: _OptionalNilComparisonType) -> Bool {
