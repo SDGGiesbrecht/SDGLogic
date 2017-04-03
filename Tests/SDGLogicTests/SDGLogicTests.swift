@@ -46,6 +46,30 @@ class SDGLogicTests : XCTestCase {
         variable = false
         variable ∨= true
         XCTAssert(variable == true)
+
+        var ran = falsch
+        wenn(wahr) {
+            ran = wahr
+        }
+        XCTAssert(ran == wahr)
+
+        ran = falsch
+        wenn(falsch) {
+            ran = wahr
+        }
+        XCTAssert(ran == falsch)
+
+        ran = faux
+        si(vrai) {
+            ran = vrai
+        }
+        XCTAssert(ran == vrai)
+
+        ran = faux
+        si(faux) {
+            ran = vrai
+        }
+        XCTAssert(ran == faux)
     }
 
     func testAny() {

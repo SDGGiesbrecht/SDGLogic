@@ -12,13 +12,12 @@
  See http://www.apache.org/licenses/LICENSE-2.0 for licence information.
  */
 
-// MARK: - Types
-
-/// Returns `true` if the two types are not identical or only one of them is `nil`.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne `vrai` si les deux valeurs ne sont pas égales.
 ///
 /// - Parameters:
-///     - lhs: A type to compare.
-///     - rhs: Another type to compare.
+///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.
+///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.
 ///
 /// - RecommendedOver: !=
 public func ≠ (lhs: Any.Type?, rhs: Any.Type?) -> Bool {

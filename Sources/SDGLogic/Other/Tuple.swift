@@ -12,57 +12,60 @@
  See http://www.apache.org/licenses/LICENSE-2.0 for licence information.
  */
 
-// MARK: - Tuples
-
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne `vrai` si les deux valeurs ne sont pas égales.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.
+///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable>(lhs: (A, B), rhs: (A, B)) -> Bool {
     return lhs != rhs
 }
 
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne `vrai` si les deux valeurs ne sont pas égales.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.
+///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable, C : Equatable>(lhs: (A, B, C), rhs: (A, B, C)) -> Bool {
     return lhs != rhs
 }
 
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne `vrai` si les deux valeurs ne sont pas égales.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.
+///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable, C : Equatable, D : Equatable>(lhs: (A, B, C, D), rhs: (A, B, C, D)) -> Bool {
     return lhs != rhs
 }
 
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne `vrai` si les deux valeurs ne sont pas égales.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.
+///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable, C : Equatable, D : Equatable, E : Equatable>(lhs: (A, B, C, D, E), rhs: (A, B, C, D, E)) -> Bool {
     return lhs != rhs
 }
 
-/// Returns `true` if any corresponding components of the two tuples are not equal.
+// [_Inherit Documentation: SDGLogic.Equatable.≠_]
+/// 🇨🇦🇬🇧🇺🇸 Returns `true` if the two values are inequal. • 🇩🇪 Gibt `wahr` zurück, wenn die zwei Werte ungleich sind. • 🇫🇷 Retourne `vrai` si les deux valeurs ne sont pas égales.
 ///
 /// - Parameters:
-///     - lhs: A tuple to compare.
-///     - rhs: Another tuple to compare.
+///     - lhs: 🇨🇦🇬🇧🇺🇸 A value to compare. • 🇩🇪 Ein Wert, der verglichen werden soll. • 🇫🇷 Une valeur á comparer.
+///     - rhs: 🇨🇦🇬🇧🇺🇸 Another value to compare. • 🇩🇪 Ein weiterer Wert, der verglichen werden soll. • 🇫🇷 Une autre valeur à comparer.
 ///
 /// - RecommendedOver: !=
 public func ≠ <A : Equatable, B : Equatable, C : Equatable, D : Equatable, E : Equatable, F : Equatable>(lhs: (A, B, C, D, E, F), rhs: (A, B, C, D, E, F)) -> Bool {
