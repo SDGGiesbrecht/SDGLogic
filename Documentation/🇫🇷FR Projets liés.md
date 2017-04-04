@@ -30,7 +30,7 @@ Workspace automates management of Swift projects.
 
 ### [SDGLogic](https://sdggiesbrecht.github.io/SDGLogic/macOS)
 
-SDGLogic extends support for Boolean logic.
+SDGLogic („SDGLogique“) étend le support pour la logique de Boole.
 
 ### [SDGMathematics](https://sdggiesbrecht.github.io/SDGMathematics/macOS)
 
