@@ -26,6 +26,7 @@ en-GB
 en-US
 de-DE
 fr-FR
+el-GR
 [_End_]
 
 [_Begin Short Project Description_]
@@ -38,7 +39,9 @@ SDGLogic extends support for Boolean logic.
 [_de-DE_]
 SDGLogic („SDGLogik“) erweitert die Unterstützung für boolesche Logik.
 [_fr-FR_]
-SDGLogic („SDGLogique“) étend le support pour la logique de Boole.
+SDGLogic (« SDGLogique ») étend le support pour la logique de Boole.
+[_el-GR_]
+SDGLogic («ΜΘΔΛογική») εκτείνει την υποστήριξη για την λογική Μπουλ.
 [_End_]
 
 [_Begin Quotation_]
@@ -58,7 +61,24 @@ Je ne suis pas fou, très excellent Festus. Je prononce des paroles de vérite
 [_End_]
 Quotation Chapter: Acts 26
 Quotation Testament: New
-Citation: ‎שאול/Shaʼul
+[_Begin Quotation URL_]
+[_el-GR_]
+https://www.bible.com/el/bible/209/ACT.26.byz04
+[_End_]
+[_Begin Citation_]
+[_en-CA_]
+‎שאול/Shaʼul
+[_en-GB_]
+‎שאול/Shaʼul
+[_en-US_]
+‎שאול/Shaʼul
+[_de-DE_]
+‎שאול/Shaʼul
+[_fr-FR_]
+‎שאול/Shaʼul
+[_el-GR_]
+‎שאול/Σαούλ
+[_End_]
 
 [_Begin Feature List_]
 [_en-CA_]
@@ -68,13 +88,17 @@ Citation: ‎שאול/Shaʼul
 [_en-US_]
 - Operators: `≠`, `¬`, `∧`, `∨`, etc.
 [_en-DE_]
-(Die deutsche APS wurde noch von kein Muttersprachler überprüft und könnte Rechtschreibungsfehler beinhalten. [Verbesserungsvorschläge](https://github.com/SDGGiesbrecht/SDGCaching/issues) sind willkommen.)
+(Die deutsche APS wurde noch von kein Muttersprachler überprüft und könnte Rechtschreibungsfehler beinhalten. [Verbesserungsvorschläge](https://github.com/SDGGiesbrecht/SDGLogic/issues) sind willkommen.)
 
 - Operatoren: `≠`, `¬`, `∧`, `∨`, usw.
 [_fr-FR_]
-(L’IPA française n’a pas encore été corrigée par un locuteur natif et peut contenir des fautes d’orthographe. Des [suggestions d’améloiration](https://github.com/SDGGiesbrecht/SDGCaching/issues) serait bienvenues.)
+(L’IPA française n’a pas encore été corrigée par un locuteur natif et peut contenir des fautes d’orthographe. Des [suggestions d’améloiration](https://github.com/SDGGiesbrecht/SDGLogic/issues) serait bienvenues.)
 
 - Opérateurs: `≠`, `¬`, `∧`, `∨`, etc.
+[_el-GR_]
+(Η ελληνική ΔΠΕ δεν ελέγχθηκε ακόμα από ένα φυσικό ομιλητή και μπορεί να περιέχει ορθογραφικά λάθη. [Προτάσεις για βελτίωση](https://github.com/SDGGiesbrecht/SDGLogic/issues) θα ήταν ευπρόσδεκτες.)
+
+- Τελεστές: `≠`, `¬`, `∧`, `∨`, κτλ.
 [_End_]
 
 Skip Simulator: True

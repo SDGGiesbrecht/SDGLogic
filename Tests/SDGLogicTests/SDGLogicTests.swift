@@ -70,6 +70,18 @@ class SDGLogicTests : XCTestCase {
             ran = vrai
         }
         XCTAssert(ran == faux)
+
+        ran = ψευδής
+        αν(αληθής) {
+            ran = αληθής
+        }
+        XCTAssert(ran == αληθής)
+
+        ran = ψευδής
+        αν(ψευδής) {
+            ran = αληθής
+        }
+        XCTAssert(ran == ψευδής)
     }
 
     func testAny() {
