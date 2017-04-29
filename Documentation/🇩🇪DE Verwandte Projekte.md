@@ -16,17 +16,24 @@
 
 ### Inhaltsverzeichnis
 
-- [Befehlszeilenwerkzeuge](#Befehlszeilenwerkzeuge)
-- [Bibliotheken an der Fundamentebene](#Bibliotheken‐an‐der‐Fundamentebene)
-- [Bibliotheken an der Sprachebene](#Bibliotheken‐an‐der‐Sprachebene)
+- [Command Line Tools](#Command‐Line‐Tools)
+- [Libraries](#Libraries)
 
-## <a name="Befehlszeilenwerkzeuge">Befehlszeilenwerkzeuge</a>
+## <a name="Command‐Line‐Tools">Command Line Tools</a>
 
 ### [Workspace](https://github.com/SDGGiesbrecht/Workspace#workspace)
 
 Workspace automates management of Swift projects.
 
-## <a name="Bibliotheken‐an‐der‐Fundamentebene">Bibliotheken an der Fundamentebene</a>
+## <a name="Libraries">Libraries</a>
+
+### [SDGCornerstone](https://sdggiesbrecht.github.io/SDGCornerstone/macOS)
+
+SDGCornerstone forms the foundation of the SDG module family. It establishes design patterns and provides general‐use extensions to the [Swift Standard Library](https://developer.apple.com/reference/swift) and [Foundation](https://developer.apple.com/reference/foundation).
+
+### [SDGCaching](https://sdggiesbrecht.github.io/SDGCaching/macOS)
+
+SDGCaching („SDGZwischenspeichern“) automatisiert das Zwischenspeichern für Ergebnisse aufwendigen Funktionen.
 
 ### [SDGLogic](https://sdggiesbrecht.github.io/SDGLogic/macOS)
 
@@ -35,9 +42,3 @@ SDGLogic („SDGLogik“) erweitert die Unterstützung für boolesche Logik.
 ### [SDGMathematics](https://sdggiesbrecht.github.io/SDGMathematics/macOS)
 
 SDGMathematics extends support for mathematics.
-
-## <a name="Bibliotheken‐an‐der‐Sprachebene">Bibliotheken an der Sprachebene</a>
-
-### [SDGCaching](https://sdggiesbrecht.github.io/SDGCaching/macOS)
-
-SDGCaching („SDGZwischenspeichern“) automatisiert das Zwischenspeichern für Ergebnisse aufwendigen Funktionen.

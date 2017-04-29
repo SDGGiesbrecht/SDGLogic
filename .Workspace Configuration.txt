@@ -31,16 +31,28 @@ el-GR
 
 [_Begin Short Project Description_]
 [_en-CA_]
+**⚠ This project is obsolete. It has been superseded by [SDGCornerstone](https://github.com/SDGGiesbrecht/SDGCornerstone). ⚠**
+
 SDGLogic extends support for Boolean logic.
 [_en-GB_]
+**⚠ This project is obsolete. It has been superseded by [SDGCornerstone](https://github.com/SDGGiesbrecht/SDGCornerstone). ⚠**
+
 SDGLogic extends support for Boolean logic.
 [_en-US_]
+**⚠ This project is obsolete. It has been superseded by [SDGCornerstone](https://github.com/SDGGiesbrecht/SDGCornerstone). ⚠**
+
 SDGLogic extends support for Boolean logic.
 [_de-DE_]
+**⚠ Dieses Projekt ist veraltet. Es wurde von [SDGCornerstone](https://github.com/SDGGiesbrecht/SDGCornerstone) abgelöst. ⚠**
+
 SDGLogic („SDGLogik“) erweitert die Unterstützung für boolesche Logik.
 [_fr-FR_]
+**⚠ Ce projet est obsolète. Il était supplanté par [SDGCornerstone](https://github.com/SDGGiesbrecht/SDGCornerstone). ⚠**
+
 SDGLogic (« SDGLogique ») étend le support pour la logique de Boole.
 [_el-GR_]
+**⚠ Αυτό το έργο είναι παρωχημένο. Αυτό αντικαθίστηκε από το [SDGCornerstone](https://github.com/SDGGiesbrecht/SDGCornerstone). ⚠**
+
 SDGLogic («ΜΘΔΛογική») εκτείνει την υποστήριξη για την λογική Μπουλ.
 [_End_]
 
